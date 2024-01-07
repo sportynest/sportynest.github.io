@@ -1674,6 +1674,7 @@ header .header-logo a {
 	height: 100%;
 	display: table;
 	position: relative;
+	background: #000;
 }
 
 .home-content-tablecell {
@@ -1952,7 +1953,6 @@ header .header-logo a {
 	height: 100%;
 	background: #EBEBEB;
 	width: 50%;
-	background-image: url(/images/profile-bg.png);
 	background-repeat: no-repeat;
 	background-position: center;
 	-webkit-background-size: cover;
