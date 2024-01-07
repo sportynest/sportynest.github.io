@@ -1,4 +1,4 @@
-/* =================================================================== 
+ f/* =================================================================== 
  *
  *  Howdy v1.0 Main Stylesheet
  *  08-13-2016
@@ -1952,7 +1952,7 @@ header .header-logo a {
 	height: 100%;
 	background: #EBEBEB;
 	width: 50%;
-	background-image: url(../images/profile-bg.png);
+	background-image: url(/images/profile-bg.png);
 	background-repeat: no-repeat;
 	background-position: center;
 	-webkit-background-size: cover;
@@ -2764,7 +2764,7 @@ header .header-logo a {
  * ------------------------------------------------------------------- */
 #contact {
 	background-color: #111111;
-	background-image: url(../images/profile-bg.png);
+	background-image: url(/images/profile-bg.png);
 	background-repeat: no-repeat;
 	background-position: center;
 	-webkit-background-size: cover;
