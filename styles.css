@@ -1,0 +1,212 @@
+/* General Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+
+nav a {
+    text-decoration: none;
+    color: darkblue;
+    margin-right: 20px;
+    color: white; 
+}
+
+#about {
+    background-color: #f8f8f8; /* Light background for contrast */
+    padding: 40px; 
+    margin-bottom: 40px; 
+    text-align: center; /* Center the content */
+}
+
+#about h2 { 
+    margin-bottom: 20px;
+    font-weight: 600; /* Slightly bolder heading */ 
+}
+
+#about p {
+    font-size: 20px;
+    line-height: 1.6; /* More spacing between lines */
+    color: #444;  /* Slightly softer text color than pure black */
+    max-width: 700px; /* Limit text width for readability */
+    margin: 0 auto; /* Center the paragraph */
+} 
+
+header {
+    background-color: #222; /* Darker color */
+    color: white;
+    padding: 20px;
+    margin-bottom: 30px; 
+}
+
+h1, h2 {
+    font-weight: bold;
+}
+
+section {
+    padding: 30px 0; 
+}
+
+.skills-category {
+    margin-bottom: 20px;
+}
+
+.skills-category h3 {
+    margin-bottom: 10px; 
+}
+
+.skill-list li {
+    margin-bottom: 10px;
+    font-size: 15px; 
+    font-weight: 500;  
+    position: relative; /* Allows positioning of the progress bar */
+}
+
+.skill-list li i { 
+    color: #555; 
+    margin-right: 8px;
+}
+
+/* Progress Bar Styling */
+progress {
+    width: 60%; 
+    height: 8px;  
+    background-color: #e0e0e0; 
+    border-radius: 5px; 
+    margin-left: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); 
+}
+
+
+progress::-webkit-progress-bar {
+    background-color: #e0e0e0; /* Ensure consistent background */ 
+}
+
+progress::-webkit-progress-value {
+    background-color: #333 /* Example color */
+}
+
+
+/* Hero Section */
+#hero {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 60px;
+}
+
+/* Project Styling */
+.project-container { 
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive columns */
+    gap: 20px;
+}
+
+.project {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+ }
+
+/* Project Hover Effect */
+.project:hover {
+    background-color: #f0f0f0;
+    transform: translateY(-3px); /* Slight lift */
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+} 
+
+/* Skills */
+.skill-list {
+   list-style-type: disc;
+   margin-left: 30px;
+} 
+
+
+#contact {
+    background-color: #f0f0f0;  
+    padding: 40px 0;
+    text-align: center;
+}
+
+#contact h2 {
+    margin-bottom: 20px;
+} 
+
+#contact a {
+    display: inline-block;
+    margin: 0 15px; 
+} 
+
+#contact i { /* If you're using icons */
+    font-size: 24px;
+    color: #333;
+}
+
+.contact-links a {
+    display: inline-block;
+    margin: 0 15px;
+    color: #333; /* Dark icon color */
+    font-size: 28px;
+}
+
+.contact-links a:hover {
+    color: #007bff; /* Example of color change on hover */
+}
+
+/* Responsive - Adapt to smaller screens */ 
+@media (max-width: 600px) {
+    nav a {
+        display: block; /* Stack links vertically */
+        margin-bottom: 10px; 
+    }
+} 
+.more-info {
+    display: none; /* Initially hide */
+}
+
+.show-info {
+    display: block;
+}
+
+#education {
+    background-color: #f0f0f0; /* Or a subtle alternative */
+    padding: 30px;
+    margin-bottom: 40px;
+    border-radius: 5px;
+}
+
+.education-entry {
+    margin-bottom: 20px; 
+}
+
+#experience {
+    background-color: #f0f0f0; /* Or a subtle alternative */
+    padding: 30px;
+    margin-bottom: 40px;
+}
+
+.experience-entry {
+    margin-bottom: 30px; 
+}
+
+.experience-entry ul {
+    list-style-type: disc; /* Default bullet points */
+    margin-top: 10px; 
+} 
+
+.experience-entry li{
+    margin-right: 8px
+}
+
+
