@@ -77,13 +77,13 @@ section {
 
 .skill-list.grid-layout { 
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjust 250px as needed */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 15px; 
 }
 
 /* Progress Bar Styling */
 progress {
-    width: 60%;  /* Adjust the percentage as needed */
+    width: 60%; 
     height: 8px;  
     background-color: #e0e0e0; 
     border-radius: 5px; 
@@ -95,11 +95,11 @@ progress {
 
 
 progress::-webkit-progress-bar {
-    background-color: #e0e0e0; /* Ensure consistent background */ 
+    background-color: #e0e0e0;
 }
 
 progress::-webkit-progress-value {
-    background-color: #333 /* Example color */
+    background-color: #333;
 }
 
 #projects .project-grid {
@@ -117,14 +117,14 @@ progress::-webkit-progress-value {
     border-radius: 5px;
 }
 
-.project img { /* Assuming your project images have the 'img' tag */
+.project img {
     transition: transform 0.3s ease; /* Smooth transition */
     max-width: 100%; /* Ensure the image scales well */
     height: auto; 
 }
 
 .project:hover img {
-    transform: scale(1.05); /* Subtle zoom on hover */
+    transform: scale(1.05);
 }
 
 
@@ -137,32 +137,21 @@ progress::-webkit-progress-value {
     padding: 40px;
 }
 
-#hero h3 {
-    position: relative; 
-    overflow: hidden;
-    height: 2.5em; 
+#hero h1 {
+    margin-top: 10px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 900; 
+    font-size: 4em;
+    margin-bottom: 0px; 
 }
 
-#hero h3 span { 
-    position: absolute;
-    top: 0;
-    animation: cycle-words 10s infinite; 
-    animation-delay: calc(var(--animation-index) * 2s);
+#hero h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;  /* Medium weight */
+    font-size: 2em;
+    color: #e0e0e0;  /* Slightly lighter shade for taglines */
+    line-height: 1.2; 
 }
-
-.cycle-text {
-    position: absolute;
-    top: 0;
-    animation: cycle-words 10s infinite; 
-}
-
-@keyframes cycle-words {
-    0% { opacity: 1; top: 0; }
-    20% { opacity: 1; top: 0; }  /* Decreased duration here */
-    25% { opacity: 0; top: -2.5em; } /* Slide out starts slightly earlier */
-    95% { opacity: 0; top: -2.5em; }
-    100% { opacity: 1; top: 0; } 
-} 
 
 
 /* Project Styling */
@@ -219,7 +208,7 @@ progress::-webkit-progress-value {
     margin: 0 15px; 
 } 
 
-#contact i { /* If you're using icons */
+#contact i {
     font-size: 24px;
     color: #333;
 }
@@ -238,7 +227,7 @@ progress::-webkit-progress-value {
 }
 
 /* Responsive - Adapt to smaller screens */ 
-@media (max-width: 900px) { /* Adjust breakpoint as needed */
+@media (max-width: 900px) { 
     nav {
         flex-direction: row; /* Ensure horizontal layout */
     }
@@ -248,10 +237,33 @@ progress::-webkit-progress-value {
     .skills-category{
         width: 100%;
     }
+    #hero h1 {
+        font-size: 3em;  /* Reduced font size for mobile */
+    }
+
+    #hero h2 {
+        font-size: 1.4em;  /* Reduced font size for mobile */
+    }
 }
 
 @media( max-width: 650px){
     progress{
+        display: none;
+    }
+
+    body{
+        padding: 10px;
+    }
+    #longeraboutme{
+        display: none;
+    }
+    #shorteraboutme{
+        display: block;
+    }
+}
+
+@media( min-width: 651px){
+    #shorteraboutme{
         display: none;
     }
 }
@@ -261,7 +273,7 @@ progress::-webkit-progress-value {
 }
 
 #education {
-    background-color: #f0f0f0; /* Or a subtle alternative */
+    background-color: #f0f0f0;
     padding: 30px;
     margin-bottom: 40px;
     border-radius: 5px;
@@ -272,7 +284,7 @@ progress::-webkit-progress-value {
 }
 
 #experience {
-    background-color: #f0f0f0; /* Or a subtle alternative */
+    background-color: #f0f0f0;
     padding: 30px;
     margin-bottom: 40px;
 }
@@ -306,7 +318,7 @@ progress::-webkit-progress-value {
 
 .more-info-hidden {
     padding-top: 20px;
-    padding-bottom: 15px; /* Adjust padding as desired */
+    padding-bottom: 15px; 
 }
 
  .read-more:hover {
@@ -321,15 +333,15 @@ progress::-webkit-progress-value {
     background: none; /* No background */
     border: none; 
     margin-left: 10px; 
-    color: #333; /* Matches your text color */
+    color: #333; 
     transition: color 0.3s ease; /* Smooth hover effect */
 }
 
 .github-link:hover {
-    color: #007bff; /* Or any color that fits your theme */
+    color: #007bff;
 }
 
-.project img { /* Assuming your project images have the 'img' tag */
+.project img { 
     transition: transform 0.3s ease; /* Smooth transition */
     max-width: 100%; /* Ensure the image scales well */
     height: auto; 
