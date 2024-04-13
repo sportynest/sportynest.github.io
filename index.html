@@ -25,13 +25,19 @@
 
     <section id="about">
         <h2>About Me</h2>
-        <p> 
+        <p id = 'longeraboutme'> 
             I'm a third-year Computer Science student at York University with a strong foundation in Python, Java, JavaScript, 
             and ML principles. My passion for technology led me to intern at Prestige Insurance Brokers, where I
             developed software applications, optimized database systems, and implemented agile methodologies. These efforts 
             resulted in improved operational efficiency and streamlined project delivery.   Driven by the potential of machine
             learning and its applications, I'm currently exploring large language models and their wider impact within the AI
             landscape.  I'm eager to contribute to innovative solutions in this domain.
+        </p>
+        <p id = 'shorteraboutme'>
+            As a third-year York University Computer Science student, my passion for technology drives me to innovate. During 
+            my internship at Prestige Insurance Brokers, I improved efficiency through software development and database 
+            optimization.  I'm eager to leverage my skills in machine learning, particularly large language models, to push the
+            boundaries of AI.
         </p>
     </section>
 
@@ -45,24 +51,10 @@
                     <div class="project-image">  <img src="/pics/1*Je65TdJbDm55KQCja7rPVw.png" alt="[Image Description]"></div>
                     <p class="short-description">Predicting sentiment (positive/negative) of movie reviews using NLP and machine learning. (Scikit-learn, NLTK, Pandas)</p> 
                     <div class="more-info-hidden hidden">
-                        This project aimed to classify the sentiment (positive or negative) of movie reviews using natural language processing (NLP) and machine learning.  I meticulously preprocessed the text data, involving tokenization, stop word removal, and stemming, followed by the implementation of Term Frequency-Inverse Document Frequency (TF-IDF) for feature engineering. After experimenting with Naive Bayes and Support Vector Machines (SVMs), I found SVMs with a Radial Basis Function (RBF) kernel delivered superior results.  To further enhance performance, I employed GridSearchCV to fine-tune the SVM's hyperparameters.  The final model achieved a notable 91.2% accuracy on the testing set, although a slight bias towards positive classifications warrants further refinement. Potential improvements include incorporating sentiment lexicons and exploring deep learning architectures such as Long Short-Term Memory (LSTM) networks
+                        This project delved into the application of natural language processing (NLP) techniques for classifying sentiment (positive or negative) within movie reviews. Leveraging key libraries like scikit-learn, NLTK, and Pandas, I meticulously preprocessed the text data, including tokenization, stop word removal, and stemming. To extract meaningful features, I employed the Term Frequency-Inverse Document Frequency (TF-IDF) weighting scheme. Extensive model exploration revealed a tie between two top performers: Support Vector Machines (SVM) with both linear and RBF kernels achieved an impressive accuracy of 89.9%. Due to its simplicity and ease of deployment, I prioritized the linear SVM as the best model. Analysis of the confusion matrix highlights a subtle bias towards positive classifications, presenting an interesting area for further optimization and potential exploration of techniques to address class imbalance.                    
                     </div>
                     <button class="read-more">Read More</button> 
-                    <a href="[GitHub Repo Link]" target="_blank" class="github-link">
-                        <i class="fab fa-github"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="project"> 
-                <h3>Sentiment Analysis of Movie Reviews</h3>
-                <div class="project-text">
-                    <div class="project-image">  <img src="/pics/1*Je65TdJbDm55KQCja7rPVw.png" alt="[Image Description]"></div>
-                    <p class="short-description">Predicting sentiment (positive/negative) of movie reviews using NLP and machine learning. (Scikit-learn, NLTK, Pandas)</p> 
-                    <div class="more-info-hidden hidden">
-                        This project aimed to classify the sentiment (positive or negative) of movie reviews using natural language processing (NLP) and machine learning.  I meticulously preprocessed the text data, involving tokenization, stop word removal, and stemming, followed by the implementation of Term Frequency-Inverse Document Frequency (TF-IDF) for feature engineering. After experimenting with Naive Bayes and Support Vector Machines (SVMs), I found SVMs with a Radial Basis Function (RBF) kernel delivered superior results.  To further enhance performance, I employed GridSearchCV to fine-tune the SVM's hyperparameters.  The final model achieved a notable 91.2% accuracy on the testing set, although a slight bias towards positive classifications warrants further refinement. Potential improvements include incorporating sentiment lexicons and exploring deep learning architectures such as Long Short-Term Memory (LSTM) networks
-                    </div>
-                    <button class="read-more">Read More</button> 
-                    <a href="[GitHub Repo Link]" target="_blank" class="github-link">
+                    <a href="https://github.com/sportynest/setiment-analysis-model" target="_blank" class="github-link">
                         <i class="fab fa-github"></i>
                     </a>
                 </div>
@@ -81,24 +73,20 @@
                 <li class="skill-item"><i class="fab fa-java"></i> Java <progress value="85" max="100"></progress></li>
                 <li class="skill-item"><i class="fab fa-git"></i> Git <progress value="100" max="100"></progress></li>
                 <li class="skill-item"><i class="fas fa-code"></i> Data Structures & Algorithms <progress value="75" max="100"></progress></li> 
-            </ul>
-        </div>
-    
-        <div class="skills-category">
-            <h3>Software Engineering</h3>
-            <ul class="skill-list">
-                <li class="skill-item"><i class="fab fa-python"></i> Django (Python) <progress value="75" max="100"></progress></li> 
-                <li class="skill-item"><i class="fas fa-database"></i> MySQL <progress value="70" max="100"></progress></li>
-                <li class="skill-item"><i class="fab fa-aws"></i> AWS Basics <progress value="40" max="100"></progress></li> 
+                <li class="skill-item"><i class="fab fa-code"></i> JavaScript <progress value="85" max="100"></progress></li> 
             </ul>
         </div>
     
         <div class="skills-category">
             <h3>Machine Learning / AI</h3>
             <ul class="skill-list">
-                <li class="skill-item"><i class="fas fa-robot"></i> Scikit-learn <progress value="95" max="100"></progress></li>
-                <li class="skill-item"><i class="fab fa-tensorflow"></i> TensorFlow <progress value="90" max="100"></progress></li>
+                <li class="skill-item"><i class="fas fa-robot"></i> Scikit-learn <progress value="80" max="100"></progress></li>
+                <li class="skill-item"><i class="fab fa-code"></i> TensorFlow <progress value="80" max="100"></progress></li>
                 <li class="skill-item"><i class="fab fa-python"></i> Data Wrangling (Pandas) <progress value="90" max="100"></progress></li>
+                <li class="skill-item"><i class="fas fa-file-alt"></i> Text Preprocessing <progress value="100" max="100"></progress></li>
+                <li class="skill-item"><i class="fas fa-code"></i> TF-IDF <progress value="90" max="100"></progress></li>
+
+                
             </ul>
         </div>
     </section>
