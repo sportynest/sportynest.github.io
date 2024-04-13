@@ -83,7 +83,7 @@ section {
 
 /* Progress Bar Styling */
 progress {
-    width: 50%;  /* Adjust the percentage as needed */
+    width: 60%;  /* Adjust the percentage as needed */
     height: 8px;  
     background-color: #e0e0e0; 
     border-radius: 5px; 
@@ -244,6 +244,15 @@ progress::-webkit-progress-value {
     }
     #projects .project-grid {
         display: block;
+    }
+    .skills-category{
+        width: 100%;
+    }
+}
+
+@media( max-width: 650px){
+    progress{
+        display: none;
     }
 }
 
