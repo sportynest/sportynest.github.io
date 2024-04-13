@@ -37,7 +37,20 @@
 
     <section id="projects">
         <h2>Featured Projects</h2>
-       
+        <div class="project-grid"> 
+            <div class="project"> 
+                <h3>Sentiment Analysis of Movie Reviews</h3>
+                <div class="project-text">
+                    <p class="short-description">Predicting sentiment (positive/negative) of movie reviews using NLP and machine learning. (Scikit-learn, NLTK, Pandas)</p> 
+                    <div class="more-info-hidden hidden">
+                        This project aimed to classify the sentiment (positive or negative) of movie reviews using natural language processing (NLP) and machine learning.  I meticulously preprocessed the text data, involving tokenization, stop word removal, and stemming, followed by the implementation of Term Frequency-Inverse Document Frequency (TF-IDF) for feature engineering. After experimenting with Naive Bayes and Support Vector Machines (SVMs), I found SVMs with a Radial Basis Function (RBF) kernel delivered superior results.  To further enhance performance, I employed GridSearchCV to fine-tune the SVM's hyperparameters.  The final model achieved a notable 91.2% accuracy on the testing set, although a slight bias towards positive classifications warrants further refinement. Potential improvements include incorporating sentiment lexicons and exploring deep learning architectures such as Long Short-Term Memory (LSTM) networks
+                    </div>
+                    <button class="read-more">Read More</button> 
+                    <a href="[GitHub Repo Link]" target="_blank" class="github-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
         </div>
     </section>
 

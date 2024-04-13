@@ -68,6 +68,12 @@ section {
     margin-right: 8px;
 }
 
+.skill-list.grid-layout { 
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjust 250px as needed */
+    gap: 15px; 
+}
+
 /* Progress Bar Styling */
 progress {
     width: 60%; 
@@ -88,6 +94,21 @@ progress::-webkit-progress-bar {
 progress::-webkit-progress-value {
     background-color: #333 /* Example color */
 }
+
+#projects .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.project {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
 
 
 /* Hero Section */
@@ -171,9 +192,6 @@ progress::-webkit-progress-value {
         margin-bottom: 10px; 
     }
 } 
-.more-info {
-    display: none; /* Initially hide */
-}
 
 .show-info {
     display: block;
@@ -209,4 +227,41 @@ progress::-webkit-progress-value {
     margin-right: 8px
 }
 
+.read-more {
+    background-color: #333;  /* Less saturated color */
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Add transition */
+ }
+
+ .hidden { 
+    display: none; 
+}
+
+.more-info-hidden {
+    padding-bottom: 15px; /* Adjust padding as desired */
+}
+
+ .read-more:hover {
+    background-color: #555; /* Slightly darker on hover */
+ }
+
+ .read-more.active {
+    background-color: #222; 
+}
+
+.github-link {
+    background: none; /* No background */
+    border: none; 
+    margin-left: 10px; 
+    color: #333; /* Matches your text color */
+    transition: color 0.3s ease; /* Smooth hover effect */
+}
+
+.github-link:hover {
+    color: #007bff; /* Or any color that fits your theme */
+}
 
