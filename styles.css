@@ -23,6 +23,7 @@ nav a {
 }
 
 #about {
+    margin-top: 0px;
     background-color: #f8f8f8; /* Light background for contrast */
     padding: 40px; 
     margin-bottom: 10px; 
@@ -57,7 +58,7 @@ h2 {
     border-bottom: 3px solid #333; /* Change: Added border-bottom to underline section titles */
     display: inline-block;
     padding-bottom: 5px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 section {
@@ -146,6 +147,7 @@ progress::-webkit-progress-value {
     background-color: #333;
     color: white;
     padding: 40px;
+    margin-bottom: 0px;
 }
 
 #hero h1 {
@@ -241,19 +243,22 @@ progress::-webkit-progress-value {
 @media (max-width: 900px) { 
     nav {
         flex-direction: row; /* Ensure horizontal layout */
+        gap: 10px; /* Change: Reduced gap for mobile screens */
     }
     #projects .project-grid {
         display: block;
     }
-    .skills-category{
+    .skills-category {
         width: 100%;
     }
     #hero h1 {
-        font-size: 3em;  /* Reduced font size for mobile */
+        font-size: 2.5em; /* Reduced font size for mobile */
     }
-
     #hero h2 {
-        font-size: 1.4em;  /* Reduced font size for mobile */
+        font-size: 1.2em; /* Reduced font size for mobile */
+    }
+    #hero {
+        padding: 20px 10px; /* Change: Reduced padding for mobile */
     }
 }
 
