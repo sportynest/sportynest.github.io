@@ -208,7 +208,7 @@ progress::-webkit-progress-value {
 
 #contact {
     background-color: #f0f0f0;  
-    padding: 40px 0;
+    padding: 30px;
     text-align: center;
 }
 
@@ -373,4 +373,10 @@ progress::-webkit-progress-value {
     display: block;       /* Prevent layout shifting */
 }
 
-
+footer {
+    text-align: center;
+    background-color: #222; /* Darker color */
+    color: white;
+    padding: 20px;
+    margin-top: 20px; /* Add some space at the top */
+}
