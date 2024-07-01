@@ -1,0 +1,135 @@
+{{ define "main" }}
+
+<nav class="navbar">
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <label for="menu-toggle" class="menu-icon">&#9776;</label>
+    <div class="menu">
+        {{ range .Site.Menus.main }}
+        <a href="{{ .URL }}">{{ .Name }}</a>
+        {{ end }}
+    </div>
+</nav>
+
+
+<section id="hero">
+    <h1>{{ .Site.Params.name }}</h1>
+    <div class="hero-subtitle">
+        <h2>{{ .Site.Params.description }}</h2>
+    </div>
+    <div class="hero-subtitle">
+        <h2>{{ .Site.Params.location }}</h2>
+    </div>
+</section>
+
+<section id="about">
+    <h2>About Me</h2>
+    <div class="about-content">
+        <p class="shortform">
+            As a third-year York University Computer Science student, my passion for technology drives me to innovate. Driven by the potential of machine learning and its applications, I'm currently exploring large language models and their wider impact within the AI landscape. I'm eager to contribute to innovative solutions in this domain.
+        </p>
+        <p class="longform">
+            I'm a third-year Computer Science student at York University with a strong foundation in Python, Java, JavaScript, and ML principles. My passion for technology led me to intern at Prestige Insurance Brokers, where I developed software applications, optimized database systems, and implemented agile methodologies. These efforts resulted in improved operational efficiency and streamlined project delivery. Driven by the potential of machine learning and its applications, I'm currently exploring large language models and their wider impact within the AI landscape. I'm eager to contribute to innovative solutions in this domain.
+        </p>
+    </div>
+</section>
+
+
+<section id="projects">
+    <h2>Featured Projects</h2>
+    <div class="project-grid">
+        {{ range .Site.Data.projects }}
+        <div class="project">
+            <h3>{{ .title }}</h3>
+            <p>{{ .short_description | markdownify }}</p>
+            <div class="project-image">  
+                <img src="{{ .img }}" alt="{{ .title }} image">
+            </div>
+            <div class="longform hidden">
+                {{ .full_description | markdownify }}
+                <p></p>
+                {{ .full_descriptiontwo | markdownify }}
+            </div>
+            <div class="project-links">
+                <button class="toggle-content">Read More</button>
+                <a href="{{ .github_link }}" target="_blank" class="github-link">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </div>
+        {{ end }}
+    </div>
+</section>
+
+
+<section id="skills">
+    <h2>My Skills</h2>
+    {{ range .Site.Data.skills }}
+    <div class="skills-category">
+        <h3>{{ .category }}</h3>
+        <ul class="skill-list">
+            {{ range .items }}
+            <li class="skill-item"><i class="{{ .icon }}"></i> {{ .name }}</li>
+            {{ end }}
+        </ul>
+    </div>
+    {{ end }}
+</section>
+
+
+<section id="blog-preview">
+    <h2>Latest Blog Posts</h2>
+    {{ $blogPosts := where .Site.RegularPages "Section" "blog" }}
+    {{ if $blogPosts }}
+        {{ range first 3 $blogPosts }}
+        <article>
+            <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+            <time>{{ .Date.Format "January 2, 2006" }}</time>
+            <p class="blog-description">{{ .Summary }}</p>
+            <a href="{{ .Permalink }}" class="read-more">Read more</a>
+        </article>
+        {{ end }}
+        <a href="/blog" class="view-all">View all posts</a>
+    {{ else }}
+        <p>No blog posts found. Check back soon!</p>
+    {{ end }}
+</section>
+
+<section id="experience">
+    <h2>Work Experience</h2>
+    {{ range .Site.Data.experience }}
+    <div class="experience-entry">
+        <h3>{{ .title }}</h3>
+        <p>{{ .company }} | {{ .date }}</p>
+        <ul>
+            {{ range .responsibilities }}
+            <li>{{ . }}</li>
+            {{ end }}
+        </ul>
+    </div>
+    {{ end }}
+</section>
+
+<section id="education">
+    <h2>Education</h2>
+    {{ range .Site.Data.education }}
+    <div class="education-entry">
+        <h3>{{ .school }}</h3>
+        <p>{{ .degree }} | {{ .date }}</p>
+    </div>
+    {{ end }}
+</section>
+
+<section id="contact">
+    <h2>Let's Connect</h2>
+    <div class="contact-links">
+        <a href="mailto:{{ .Site.Params.email }}" target="_blank"><i class="fas fa-envelope"></i></a>
+        <a href="{{ .Site.Params.linkedin }}" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="{{ .Site.Params.github }}" target="_blank"><i class="fab fa-github"></i></a>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; {{ now.Format "2006" }} {{ .Site.Title }}</p>
+</footer>
+
+{{ end }}
