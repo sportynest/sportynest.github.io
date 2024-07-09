@@ -1,0 +1,6 @@
+- id: "sentiment-analysis"
+  title: "Sentiment Analysis of Movie Reviews"
+  short_description: "Predicting sentiment (positive/negative) of movie reviews using NLP and machine learning. (Scikit-learn, NLTK, Pandas)"
+  full_description: "This project delved into the application of natural language processing (NLP) techniques for classifying sentiment (positive or negative) within movie reviews. Leveraging key libraries like scikit-learn, NLTK, and Pandas, I meticulously preprocessed the text data, including tokenization, stop word removal, and stemming. To extract meaningful features, I employed the Term Frequency-Inverse Document Frequency (TF-IDF) weighting scheme." 
+  full_descriptiontwo: "Extensive model exploration revealed a tie between two top performers Support Vector Machines (SVM) with both linear and RBF kernels achieved an impressive accuracy of 89.9%. Due to its simplicity and ease of deployment, I prioritized the linear SVM as the best model. Analysis of the confusion matrix highlights a subtle bias towards positive classifications, presenting an interesting area for further optimization and potential exploration of techniques to address class imbalance."
+  img: "images/1*Je65TdJbDm55KQCja7rPVw.png"
