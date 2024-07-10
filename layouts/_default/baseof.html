@@ -10,12 +10,25 @@
         <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@900&family=Montserrat:wght@500&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     </head>
 <body>
-    {{ partial "custom-scripts.html" . }}
-    {{ partial "header.html" . }}
-    <main>
-        {{ block "main" . }}{{ end }}
-    </main>
-    {{ partial "footer.html" . }}
+    <header>
+        <nav class="navbar">
+            <div class="menu">
+                {{ range .Site.Menus.main }}
+                    <a href="{{ .URL }}" class="nav-item{{ if .Params.mobileHide }} mobile-hide{{ end }}">{{ .Name }}</a>
+                {{ end }}
+            </div>
+        </nav>
+    </header>
+    <div id="page-container">
+        <div id="content-wrap">
+        {{ partial "custom-scripts.html" . }}
+        {{ partial "header.html" . }}
+        <main>
+            {{ block "main" . }}{{ end }}
+        </main>
+        </div>
+        {{ partial "footer.html" . }}
+    </div>
     <script src="{{ "js/script.js" | relURL }}"></script>
 </body>
 </html>

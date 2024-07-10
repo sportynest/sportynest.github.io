@@ -1,0 +1,86 @@
+<section id="projects">
+    <h2>Featured Projects</h2>
+    {{ $projects := .Site.Data.projects }}
+    {{ if $projects }}
+        {{ if gt (len $projects) 2 }}
+            <div class="project-grid">
+                {{ range first 2 $projects }}
+                <div class="project">
+                    <h3>{{ .title }}</h3>
+                    <p>{{ .short_description | markdownify }}</p>
+                    
+                    {{ if .img }}
+                    <div class="project-image">
+                        <img src="{{ .img | relURL }}" alt="{{ .title }} image">
+                    </div>
+                    {{ end }}
+                    
+                    <div class="project-links">
+                        <button class="toggle-content">Read More</button>
+                        
+                        {{ if .github_link }}
+                        <a href="{{ .github_link }}" target="_blank" class="github-link" title="View on GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        {{ end }}
+                        
+                        {{ if .weblink }}
+                        <a href="{{ .weblink }}" target="_blank" class="web-link" title="Visit Website">
+                            <i class="fas fa-globe"></i>
+                        </a>
+                        {{ end }}
+                    </div>
+                    
+                    <div class="longform hidden">
+                        {{ .full_description | markdownify }}
+                        {{ if .full_descriptiontwo }}
+                            <p>{{ .full_descriptiontwo | markdownify }}</p>
+                        {{ end }}
+                    </div>
+                </div>
+                {{ end }}
+            </div>
+            <a href="/projects" class="view-all">View all projects</a>
+        {{ else }}
+            <div class="project-grid">
+                {{ range $projects }}
+                <div class="project">
+                    <h3>{{ .title }}</h3>
+                    <p>{{ .short_description | markdownify }}</p>
+                    
+                    {{ if .img }}
+                    <div class="project-image">
+                        <img src="{{ .img | relURL }}" alt="{{ .title }} image">
+                    </div>
+                    {{ end }}
+                    
+                    <div class="longform hidden">
+                        {{ .full_description | markdownify }}
+                        {{ if .full_descriptiontwo }}
+                            <p>{{ .full_descriptiontwo | markdownify }}</p>
+                        {{ end }}
+                    </div>
+                    
+                    <div class="project-links">
+                        <button class="toggle-content">Read More</button>
+                        
+                        {{ if .github_link }}
+                        <a href="{{ .github_link }}" target="_blank" class="github-link" title="View on GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        {{ end }}
+                        
+                        {{ if .weblink }}
+                        <a href="{{ .weblink }}" target="_blank" class="web-link" title="Visit Website">
+                            <i class="fas fa-globe"></i>
+                        </a>
+                        {{ end }}
+                    </div>
+                </div>
+                {{ end }}
+            </div>
+        {{ end }}
+    {{ else }}
+        <p>No projects found. Check back soon!</p>
+    {{ end }}
+</section>

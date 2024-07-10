@@ -5,3 +5,11 @@
   full_descriptiontwo: "Extensive model exploration revealed a tie between two top performers Support Vector Machines (SVM) with both linear and RBF kernels achieved an impressive accuracy of 89.9%. Due to its simplicity and ease of deployment, I prioritized the linear SVM as the best model. Analysis of the confusion matrix highlights a subtle bias towards positive classifications, presenting an interesting area for further optimization and potential exploration of techniques to address class imbalance."
   img: "images/1*Je65TdJbDm55KQCja7rPVw.png"
   github_link: "https://github.com/sportynest/setiment-analysis-model"
+
+- id: "bible-language-model"
+  title: "Bible-Based Language Model"
+  short_description: "Developing a specialized T5-based language model for biblical text analysis and generation using PyTorch and Hugging Face Transformers."
+  full_description: "This project focuses on creating a sophisticated language model tailored for biblical texts and theological analysis. Utilizing the T5 architecture and PyTorch, I implemented a comprehensive data preprocessing pipeline to handle multiple Bible versions and theological texts. The model is designed to perform various tasks including verse completion, thematic analysis, and contextual interpretation of biblical passages."
+  full_descriptiontwo: "A hybrid training approach was employed, leveraging transfer learning from smaller to larger models to optimize performance. Custom evaluation metrics were developed to assess the model's capability in tasks specific to biblical understanding. The evaluation framework provides insights into the model's performance across different aspects of biblical knowledge and interpretation. While initial results show promise in capturing biblical language patterns, ongoing work focuses on refining the model's accuracy and contextual understanding."
+  img: 
+  weblink:

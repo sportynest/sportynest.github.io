@@ -11,28 +11,31 @@
         <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@900&family=Montserrat:wght@500&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     </head>
 <body>
-    
-    
-    <main>
+    <header>
+        <nav class="navbar">
+            <div class="menu">
+                
+                    <a href="/" class="nav-item">Home</a>
+                
+                    <a href="/projects" class="nav-item">Projects</a>
+                
+                    <a href="/#skills" class="nav-item mobile-hide">Skills</a>
+                
+                    <a href="/blog" class="nav-item">Blog</a>
+                
+                    <a href="/#experience" class="nav-item mobile-hide">Experience</a>
+                
+                    <a href="/#contact" class="nav-item">Contact</a>
+                
+            </div>
+        </nav>
+    </header>
+    <div id="page-container">
+        <div id="content-wrap">
         
-
-<nav class="navbar">
-    <div class="menu">
         
-            <a href="/#about" class="nav-item mobile-hide">About</a>
-        
-            <a href="/#projects" class="nav-item">Projects</a>
-        
-            <a href="/#skills" class="nav-item">Skills</a>
-        
-            <a href="/blog" class="nav-item">Blog</a>
-        
-            <a href="/#experience" class="nav-item mobile-hide">Experience</a>
-        
-            <a href="/#contact" class="nav-item">Contact</a>
-        
-    </div>
-</nav>
+        <main>
+            
 
 
 <section id="hero">
@@ -57,33 +60,69 @@
     </div>
 </section>
 
-
 <section id="projects">
     <h2>Featured Projects</h2>
-    <div class="project-grid">
+    
+    
         
-        <div class="project">
-            <h3>Sentiment Analysis of Movie Reviews</h3>
-            <p>Predicting sentiment (positive/negative) of movie reviews using NLP and machine learning. (Scikit-learn, NLTK, Pandas)</p>
-            <div class="project-image">  
-                <img src="images/1*Je65TdJbDm55KQCja7rPVw.png" alt="Sentiment Analysis of Movie Reviews image">
+            <div class="project-grid">
+                
+                <div class="project">
+                    <h3>Sentiment Analysis of Movie Reviews</h3>
+                    <p>Predicting sentiment (positive/negative) of movie reviews using NLP and machine learning. (Scikit-learn, NLTK, Pandas)</p>
+                    
+                    
+                    <div class="project-image">
+                        <img src="/images/1*Je65TdJbDm55KQCja7rPVw.png" alt="Sentiment Analysis of Movie Reviews image">
+                    </div>
+                    
+                    
+                    <div class="longform hidden">
+                        This project delved into the application of natural language processing (NLP) techniques for classifying sentiment (positive or negative) within movie reviews. Leveraging key libraries like scikit-learn, NLTK, and Pandas, I meticulously preprocessed the text data, including tokenization, stop word removal, and stemming. To extract meaningful features, I employed the Term Frequency-Inverse Document Frequency (TF-IDF) weighting scheme.
+                        
+                            <p>Extensive model exploration revealed a tie between two top performers Support Vector Machines (SVM) with both linear and RBF kernels achieved an impressive accuracy of 89.9%. Due to its simplicity and ease of deployment, I prioritized the linear SVM as the best model. Analysis of the confusion matrix highlights a subtle bias towards positive classifications, presenting an interesting area for further optimization and potential exploration of techniques to address class imbalance.</p>
+                        
+                    </div>
+                    
+                    <div class="project-links">
+                        <button class="toggle-content">Read More</button>
+                        
+                        
+                        <a href="https://github.com/sportynest/setiment-analysis-model" target="_blank" class="github-link" title="View on GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        
+                        
+                        
+                    </div>
+                </div>
+                
+                <div class="project">
+                    <h3>Bible-Based Language Model</h3>
+                    <p>Developing a specialized T5-based language model for biblical text analysis and generation using PyTorch and Hugging Face Transformers.</p>
+                    
+                    
+                    
+                    <div class="longform hidden">
+                        This project focuses on creating a sophisticated language model tailored for biblical texts and theological analysis. Utilizing the T5 architecture and PyTorch, I implemented a comprehensive data preprocessing pipeline to handle multiple Bible versions and theological texts. The model is designed to perform various tasks including verse completion, thematic analysis, and contextual interpretation of biblical passages.
+                        
+                            <p>A hybrid training approach was employed, leveraging transfer learning from smaller to larger models to optimize performance. Custom evaluation metrics were developed to assess the model&rsquo;s capability in tasks specific to biblical understanding. The evaluation framework provides insights into the model&rsquo;s performance across different aspects of biblical knowledge and interpretation. While initial results show promise in capturing biblical language patterns, ongoing work focuses on refining the model&rsquo;s accuracy and contextual understanding.</p>
+                        
+                    </div>
+                    
+                    <div class="project-links">
+                        <button class="toggle-content">Read More</button>
+                        
+                        
+                        
+                        
+                    </div>
+                </div>
+                
             </div>
-            <div class="longform hidden">
-                This project delved into the application of natural language processing (NLP) techniques for classifying sentiment (positive or negative) within movie reviews. Leveraging key libraries like scikit-learn, NLTK, and Pandas, I meticulously preprocessed the text data, including tokenization, stop word removal, and stemming. To extract meaningful features, I employed the Term Frequency-Inverse Document Frequency (TF-IDF) weighting scheme.
-                <p></p>
-                Extensive model exploration revealed a tie between two top performers Support Vector Machines (SVM) with both linear and RBF kernels achieved an impressive accuracy of 89.9%. Due to its simplicity and ease of deployment, I prioritized the linear SVM as the best model. Analysis of the confusion matrix highlights a subtle bias towards positive classifications, presenting an interesting area for further optimization and potential exploration of techniques to address class imbalance.
-            </div>
-            <div class="project-links">
-                <button class="toggle-content">Read More</button>
-                <a href="https://github.com/sportynest/setiment-analysis-model" target="_blank" class="github-link">
-                    <i class="fab fa-github"></i>
-                </a>
-            </div>
-        </div>
         
-    </div>
+    
 </section>
-
 
 <section id="skills">
     <h2>My Skills</h2>
@@ -132,11 +171,11 @@
         
             
             <article>
-                <h3><a href="/blog/2024-07-10-beyond-language-models-the-quest-for-true-ai-intelligence/">The State of AI: Beyond Language Models and the Quest for True Intelligence</a></h3>
+                <h3><a href="/2024/07/10/the-state-of-ai-beyond-language-models-and-the-quest-for-true-intelligence/">The State of AI: Beyond Language Models and the Quest for True Intelligence</a></h3>
                 <time>July 10, 2024</time>
                 <p class="blog-description">As an ML Engineer and Software Developer, I&rsquo;ve been closely observing the rapid advancements in Artificial Intelligence, particularly in the domain of Large Language Models (LLMs). With AI being such a prevalent topic, I want to share my thoughts on the current state of AI, its potential, and its fundamental limitations.
 Defining AI and Intelligence To me, AI is fundamentally a self-acting agent designed to enhance human activity and efficiency. However, it&rsquo;s crucial to distinguish between AI and true intelligence.</p>
-                <a href="/blog/2024-07-10-beyond-language-models-the-quest-for-true-ai-intelligence/" class="read-more">Read more</a>
+                <a href="/2024/07/10/the-state-of-ai-beyond-language-models-and-the-quest-for-true-intelligence/" class="read-more">Read more</a>
             </article>
             
         
@@ -178,22 +217,10 @@ Defining AI and Intelligence To me, AI is fundamentally a self-acting agent desi
     
 </section>
 
-<section id="contact">
-    <h2>Let's Connect</h2>
-    <div class="contact-links">
-        <a href="mailto:paulsoyewo@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
-        <a href="https://www.linkedin.com/in/lekan-soyewo/" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="https://github.com/sportynest" target="_blank"><i class="fab fa-github"></i></a>
-    </div>
-</section>
 
-<footer>
-    <p>&copy; 2024 Olalekan Soyewo | ML Engineer &amp; Software Developer</p>
-</footer>
-
-
-    </main>
-    <script>
+        </main>
+        </div>
+        <script>
     if (window.netlifyIdentity) {
       window.netlifyIdentity.on("init", user => {
         if (!user) {
@@ -204,6 +231,20 @@ Defining AI and Intelligence To me, AI is fundamentally a self-acting agent desi
       });
     }
   </script>
+
+<section id="contact">
+  <h2>Let's Connect</h2>
+  <div class="contact-links">
+      <a href="mailto:paulsoyewo@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+      <a href="https://www.linkedin.com/in/lekan-soyewo/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/sportynest" target="_blank"><i class="fab fa-github"></i></a>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2024 Olalekan Soyewo | ML Engineer &amp; Software Developer</p>
+</footer>
+    </div>
     <script src="/js/script.js"></script>
 </body>
 </html>
