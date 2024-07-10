@@ -10,26 +10,33 @@ layoutDir: "layouts"
 # Ensure the blog is not explicitly excluded
 disableKinds: []
 
+
+
 menu:
   main:
     - name: "About"
-      url: "#about"
+      url: "/#about"
       weight: 1
+      params:
+        mobileHide: true
     - name: "Projects"
-      url: "#projects"
+      url: "/#projects"
       weight: 2
     - name: "Skills"
-      url: "#skills"
+      url: "/#skills"
       weight: 3
     - name: "Blog"
       url: "/blog"
       weight: 4
     - name: "Experience"
-      url: "#experience"
+      url: "/#experience"
       weight: 5
+      params:
+        mobileHide: true
     - name: "Contact"
-      url: "#contact"
+      url: "/#contact"
       weight: 6
+      
 
 params:
   name: "Olalekan Soyewo"

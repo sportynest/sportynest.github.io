@@ -16,8 +16,6 @@ nav {
     background-color: #222;
     padding: 20px;
     margin-bottom: 20px;
-    position: relative;
-    z-index: 1000;
 }
 
 .navbar .menu {
@@ -29,17 +27,6 @@ nav {
     color: #fff;
     padding: 0.5rem 1rem;
     text-decoration: none;
-}
-
-.navbar .menu-toggle {
-    display: none;
-}
-
-.menu-icon {
-    display: none;
-    font-size: 1.5rem;
-    cursor: pointer;
-    color: white;
 }
 
 nav a {
@@ -373,40 +360,47 @@ footer {
 }
 
 /* Responsive Design */
+/* Responsive Design */
 @media (max-width: 850px) {
-    nav {
-        flex-direction: column; /* Ensure horizontal layout */
-        gap: 5px; /* Change: Reduced gap for mobile screens */
-        justify-content: flex-start;
-    }
-    
-    #hero h1 {
-        font-size: 2.5em;
-    }
-    
-    #hero h2 {
-        font-size: 1.2em;
+
+    .navbar .menu {
+        display: flex;
+        align-items: center;
     }
     
     #hero {
-        padding: 20px 10px;
+        padding: 60px 10px;
+    }
+    
+    #hero h1 {
+        font-size: 3.5em;
+    }
+    
+    #hero h2 {
+        font-size: 1.7em;
     }
     
     .project-grid {
         grid-template-columns: 1fr;
     }
 
-    .navbar{
+    .mobile-hide {
         display: none;
     }
-    #hero{
-        padding-top: 60px;
-        padding-bottom: 60px;
-    }
-    
 }
 
 @media (max-width: 650px) {
+    #hero h1 {
+        font-size: 2.5em;
+    }
+    section {
+        padding: 20px 10px;
+    }
+    #hero h2 {
+        font-size: 1.4em;
+    }
+    
+
     #blog-preview .blog-description,
     #blog-list .blog-description {
         display: -webkit-box;
@@ -414,26 +408,26 @@ footer {
         -webkit-box-orient: vertical;
         overflow: hidden;
     }
-    section {
-        padding: 20px 10px;
-    }
+
     .about-content .shortform {
         display: block;
     }
+
     .about-content .longform {
         display: none;
     }
 }
 
 @media (min-width: 651px) {
+    #hero {
+        padding: 50px 10px;
+    }
+
     .about-content .shortform {
         display: none;
     }
+
     .about-content .longform {
         display: block;
-    }
-    #hero{
-        padding-top: 50px;
-        padding-bottom: 50px;
     }
 }
