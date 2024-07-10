@@ -1,11 +1,9 @@
 {{ define "main" }}
 
 <nav class="navbar">
-    <input type="checkbox" id="menu-toggle" class="menu-toggle">
-    <label for="menu-toggle" class="menu-icon">&#9776;</label>
     <div class="menu">
         {{ range .Site.Menus.main }}
-        <a href="{{ .URL }}">{{ .Name }}</a>
+            <a href="{{ .URL }}" class="nav-item{{ if .Params.mobileHide }} mobile-hide{{ end }}">{{ .Name }}</a>
         {{ end }}
     </div>
 </nav>
@@ -80,19 +78,31 @@
     <h2>Latest Blog Posts</h2>
     {{ $blogPosts := where .Site.RegularPages "Section" "blog" }}
     {{ if $blogPosts }}
-        {{ range first 3 $blogPosts }}
-        <article>
-            <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
-            <time>{{ .Date.Format "January 2, 2006" }}</time>
-            <p class="blog-description">{{ .Summary }}</p>
-            <a href="{{ .Permalink }}" class="read-more">Read more</a>
-        </article>
+        {{ if gt (len $blogPosts) 2 }}
+            {{ range first 3 $blogPosts }}
+            <article>
+                <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+                <time>{{ .Date.Format "January 2, 2006" }}</time>
+                <p class="blog-description">{{ .Summary }}</p>
+                <a href="{{ .RelPermalink }}" class="read-more">Read more</a>
+            </article>
+            {{ end }}
+            <a href="/blog" class="view-all">View all posts</a>
+        {{ else }}
+            {{ range first 3 $blogPosts }}
+            <article>
+                <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+                <time>{{ .Date.Format "January 2, 2006" }}</time>
+                <p class="blog-description">{{ .Summary }}</p>
+                <a href="{{ .RelPermalink }}" class="read-more">Read more</a>
+            </article>
+            {{ end }}
         {{ end }}
-        <a href="/blog" class="view-all">View all posts</a>
     {{ else }}
         <p>No blog posts found. Check back soon!</p>
     {{ end }}
 </section>
+
 
 <section id="experience">
     <h2>Work Experience</h2>

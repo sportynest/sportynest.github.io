@@ -1,4 +1,11 @@
 {{ define "main" }}
+<nav class="navbar">
+    <div class="menu">
+        {{ range .Site.Menus.main }}
+            <a href="{{ .URL }}" class="nav-item{{ if .Params.mobileHide }} mobile-hide{{ end }}">{{ .Name }}</a>
+        {{ end }}
+    </div>
+</nav>
 <section id="blog-list">
     <h1>{{ .Title }}</h1>
     {{ range .Pages }}
