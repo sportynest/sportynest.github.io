@@ -6,8 +6,17 @@
   img: "images/1*Je65TdJbDm55KQCja7rPVw.png"
   github_link: "https://github.com/sportynest/setiment-analysis-model"
 
+- id: "studybuddy-ai"
+  title: "StudyBuddy AI: Intelligent Learning Assistant"
+  short_description: "An AI-powered study companion application built with React, Django, and Cloudflare, integrating OpenAI's GPT for personalized learning assistance."
+  full_description: "StudyBuddy AI is an innovative educational platform designed to revolutionize the way students learn and interact with study materials. Leveraging the power of React for a dynamic frontend and Django for a robust backend, this project seamlessly integrates OpenAI's GPT model to provide intelligent, context-aware study assistance. The application offers personalized learning experiences, adaptive quizzing, and real-time explanations across various subjects."
+  full_descriptiontwo: "A key technical challenge was implementing a scalable architecture capable of handling real-time AI interactions while maintaining low latency. This was achieved through strategic use of Cloudflare Workers and D1 database for efficient data management and API routing. The project also features a sophisticated user authentication system with tiered access levels, integrated with Stripe for seamless subscription management. Ongoing development focuses on enhancing the AI's contextual understanding of educational content and implementing advanced analytics to track and optimize user learning paths."
+  img: 
+  github_link: 
+  weblink: 
+
 - id: "bible-language-model"
-  title: "Bible-Based Language Model"
+  title: "Bible-Based Language Model (TBC)"
   short_description: "Developing a specialized T5-based language model for biblical text analysis and generation using PyTorch and Hugging Face Transformers."
   full_description: "This project focuses on creating a sophisticated language model tailored for biblical texts and theological analysis. Utilizing the T5 architecture and PyTorch, I implemented a comprehensive data preprocessing pipeline to handle multiple Bible versions and theological texts. The model is designed to perform various tasks including verse completion, thematic analysis, and contextual interpretation of biblical passages."
   full_descriptiontwo: "A hybrid training approach was employed, leveraging transfer learning from smaller to larger models to optimize performance. Custom evaluation metrics were developed to assess the model's capability in tasks specific to biblical understanding. The evaluation framework provides insights into the model's performance across different aspects of biblical knowledge and interpretation. While initial results show promise in capturing biblical language patterns, ongoing work focuses on refining the model's accuracy and contextual understanding."
