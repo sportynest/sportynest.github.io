@@ -8,7 +8,7 @@
 
 - id: "studybuddy-ai"
   title: "StudyBuddy AI: Intelligent Learning Assistant"
-  announcement_info: "Publicly available 26/08/2025. Feel free to reach out to me for early access"
+  announcement_info: "Publicly available 26/08/2024. Feel free to reach out to me for early access"
   short_description: "An AI-powered study companion application built with React, Django, and Cloudflare, integrating OpenAI's GPT for personalized learning assistance."
   full_description: "StudyBuddy AI is an innovative educational platform designed to revolutionize the way students learn and interact with study materials. Leveraging the power of React for a dynamic frontend and Django for a robust backend, this project seamlessly integrates OpenAI's GPT model to provide intelligent, context-aware study assistance. The application offers personalized learning experiences, adaptive quizzing, and real-time explanations across various subjects."
   full_descriptiontwo: "A key technical challenge was implementing a scalable architecture capable of handling real-time AI interactions while maintaining low latency. This was achieved through strategic use of Cloudflare Workers and D1 database for efficient data management and API routing. The project also features a sophisticated user authentication system with tiered access levels, integrated with Stripe for seamless subscription management. Ongoing development focuses on enhancing the AI's contextual understanding of educational content and implementing advanced analytics to track and optimize user learning paths."
