@@ -10,6 +10,8 @@
       icon: "fas fa-code"
     - name: "JavaScript"
       icon: "fab fa-js"
+    - name: "C/C++"
+      icon: "fas fa-code"
 
 - category: "Machine Learning / AI"
   items:

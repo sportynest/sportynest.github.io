@@ -9,6 +9,9 @@
                     <h3>{{ .title }}</h3>
                     <p>{{ .short_description | markdownify }}</p>
                     
+                    {{if .announcement_info}}
+                        <p>{{ .announcement_info | markdownify }}</p>
+                    {{ end }}
                     {{ if .img }}
                     <div class="project-image">
                         <img src="{{ .img | relURL }}" alt="{{ .title }} image">
