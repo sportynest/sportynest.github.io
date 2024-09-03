@@ -6,15 +6,14 @@
   img: "images/1*Je65TdJbDm55KQCja7rPVw.png"
   github_link: "https://github.com/sportynest/setiment-analysis-model"
 
-- id: "studybuddy-ai"
-  title: "StudyBuddy AI: Intelligent Learning Assistant"
-  status: "Current Status: Publicly available 26/08/2024. Feel free to reach out to me for early access"
-  short_description: "An AI-powered study companion application built with React, Django, and Cloudflare, integrating OpenAI's GPT for personalized learning assistance."
-  full_description: "StudyBuddy AI is an innovative educational platform designed to revolutionize the way students learn and interact with study materials. Leveraging the power of React for a dynamic frontend and Django for a robust backend, this project seamlessly integrates OpenAI's GPT model to provide intelligent, context-aware study assistance. The application offers personalized learning experiences, adaptive quizzing, and real-time explanations across various subjects."
-  full_descriptiontwo: "A key technical challenge was implementing a scalable architecture capable of handling real-time AI interactions while maintaining low latency. This was achieved through strategic use of Cloudflare Workers and D1 database for efficient data management and API routing. The project also features a sophisticated user authentication system with tiered access levels, integrated with Stripe for seamless subscription management. Ongoing development focuses on enhancing the AI's contextual understanding of educational content and implementing advanced analytics to track and optimize user learning paths."
+- id: "studybuddy"
+  title: "StudyBuddy"
+  short_description: "An AI-powered study companion application built with React and Cloudflare Workers, integrating Anthropic's Console, OpenAi's API and GroqCloud for all sorts of ai computational activities."
+  full_description: "StudyBuddy AI is an innovative educational platform designed to revolutionize the way students learn and interact with study materials. Leveraging React for a dynamic frontend and Cloudflare Workers for a serverless backend, this project seamlessly integrates Anthropic's Claude AI model to provide intelligent, context-aware study assistance. The application offers personalized learning experiences, real-time explanations across various subjects, and chat-based interactions for in-depth topic exploration."
+  full_descriptiontwo: "A key technical challenge was implementing a scalable architecture capable of handling real-time AI interactions while maintaining low latency. This was achieved through strategic use of Cloudflare Workers and D1 database for efficient data management and API routing. The project features a sophisticated user authentication system with tiered access levels, integrated with Stripe for seamless subscription management. The application includes features such as chat history management, PDF document analysis, and adaptive responses based on user subscription levels. Ongoing development focuses on enhancing the AI's contextual understanding of educational content and implementing advanced analytics to track and optimize user learning paths."
   img: 
   github_link: 
-  weblink: "https://studybuddy.lekan.ca"
+  weblink: "https://studdybuddy.ca"
 
 - id: "bible-language-model"
   title: "Bible-Based Language Model (TBC)"
